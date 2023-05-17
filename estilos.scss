@@ -48,9 +48,25 @@ h3 {
     font-size: 30px;
     font-family: $fuente2
 }
-
+@media only screen and (min-widht: 400px){
+    .navbar-brand {
+        font-size: 30px;
+        font-family: $fuente1;
+        color: $color3;
+        margin-left: $t1;
+    }
+    h3 {
+        font-family: $fuente2;
+        font-size: 10px;
+    }
+    .navbar-nav {
+        font-size: 10px;
+        font-family: $fuente2
+}
+}
 
 body {
+    width: 100%;
     background-image: url("./img/fondoindex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,6 +93,21 @@ body {
     .btn:hover {
         color: $color1;
     }
+}
+@media only screen and (min-widht: 400px){
+    .container {
+        width: 250px;
+        height: 150px;
+        background-color: $color2;
+        padding: $t1 20px;
+        text-align: center;
+        margin-top: $t3;
+        margin-left: 125px;
+        font-family: $fuente2;
+        font-size: 25px;
+        color: $color3;
+        opacity: 0.8;
+}
 }
 
 
@@ -105,21 +136,25 @@ h2 {
 .contenedor .gal {
     border-radius: 25px;
     background-position: center;
-    background-size: 85%;
     background-repeat: no-repeat;
     transition: all 0.9s;
 }
 
+
 .contenedor .f1 {
-    background-image: url(img/car1.jpeg);
+    background-image: url(./img/car1.jpeg);
+    background-size: 50%;
 }
 
 .contenedor .f2 {
-    background-image: url(img/Popi1.jpeg);
+    background-image: url(./img/Popi1.jpeg);
+    background-size:50%;
+
 }
 
 .contenedor .f3 {
-    background-image: url(img/Popi3.jpeg);
+    background-image: url(./img/Popi3.jpeg);
+    background-size: 50%;
 }
 
 
@@ -133,9 +168,19 @@ h2 {
 }
 
 @media only screen and (min-width: 400px) {
+    h2 {
+        margin-top: 50px;
+        padding: 15px;
+        text-align: center;
+        font-family: $fuente2;
+        font-size: 20px;
+        color: $color4;
+    }
     .contenedor {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 400px);
+        margin-left: 20px;
+        width: 100%;
     }
 }
 
@@ -264,14 +309,26 @@ h2 {
     }
 }
 
-@media screen and (max-widht: 800px) {
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+@media only screen and (min-widht: 400px){
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px 0px;
     }
 }
+
+// @media screen and (max-widht: 800px) {
+//     .pie-pagina .grupo-1 {
+//         width: 90%;
+//         grid-template-columns: repeat(1, 1fr);
+//         grid-gap: 30px;
+//         padding: 35px 0px;
+//     }
+// }
 
 .slide {
     margin: $t4 $t5;

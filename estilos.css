@@ -43,6 +43,7 @@ body {
   color: black;
   opacity: 0.8;
 }
+
 .container h1 {
   font-size: 40px;
   color: cornflowerblue;
@@ -74,23 +75,28 @@ h2 {
 }
 
 .contenedor .gal {
-  border-radius: 25px;
+  border-radius: 50px;
   background-position: center;
   background-size: 85%;
   background-repeat: no-repeat;
   transition: all 0.9s;
+  background-color: linen;
+  opacity: 0.8;
 }
 
 .contenedor .f1 {
-  background-image: url(img/car1.jpeg);
-}
+  background-image: url(./img/car1.jpeg);
+  background-size: 50%;
+  }
 
 .contenedor .f2 {
-  background-image: url(img/Popi1.jpeg);
+  background-image: url(./img/Popi1.jpeg);
+  background-size: 50%;
 }
 
 .contenedor .f3 {
-  background-image: url(img/Popi3.jpeg);
+  background-image: url(./img/Popi3.jpeg);
+  background-size: 50%;
 }
 
 .contenedor p {
@@ -138,14 +144,19 @@ h2 {
 }
 /* menu */
 .card-group {
-  margin-top: 200px;
+  margin: 200px 50px 20px 50px;
   opacity: 0.8;
 }
+
 .card-group h5 {
   text-align: center;
   font-family: "Ysabeau", sans-serif;
   font-size: 30px;
   text-decoration: underline;
+}
+.card-img-top{
+  width: 300px;
+  height: 300px;
 }
 .card-group .card-text {
   font-family: "Ysabeau", sans-serif;
@@ -157,10 +168,11 @@ h2 {
   background-color: white;
   margin-top: 300px;
 }
-.pie-pagina .grupo-1 {
+.pie-pagina .caja-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  margin-left: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
@@ -191,8 +203,7 @@ h2 {
 .pie-pagina .red-social a {
   display: inline-block;
   text-decoration: none;
-  width: 45px;
-  height: 45px;
+  font-size: 45px;
   line-height: 45px;
   color: black;
   margin-left: 50px;
@@ -201,21 +212,19 @@ h2 {
 }
 .pie-pagina .red-social a:hover {
   color: lightcoral;
-  width: 75px;
-  height: 75px;
 }
-.pie-pagina .grupo-2 {
+.pie-pagina .caja-2 {
   background-color: cornflowerblue;
   padding: 15px 10px;
   text-align: center;
   color: black;
 }
-.pie-pagina .grupo-2 .grupo-2 small {
+.pie-pagina .caja-2 .caja-2 small {
   font-size: 15px;
 }
 
 @media screen and (max-widht: 800px) {
-  .pie-pagina .grupo-1 {
+  .pie-pagina .caja-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
